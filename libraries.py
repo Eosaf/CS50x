@@ -14,7 +14,7 @@ class Book:
         self.__price = new_price
 
 
-# Inheriting from parent (Book) to create the child (EBook)
+# Inheriting from parent (Book) to create child (EBook)
 class Ebook(Book):
     def __init__(self, title, author, price, file_size_mb):
         super().__init__(title, author, price)
@@ -24,7 +24,6 @@ class Ebook(Book):
         print(f"Downloading {self.title}... Size: {self.file_size_mb}MB")
 
 
-# Instantiate and test objects
 book1 = Book("Clean Code", "Robert C. Martin", 45)
 book2 = Book("The Pragmatic Programmer", "Andrew Hunt", 35)
 
